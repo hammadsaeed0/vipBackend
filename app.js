@@ -31,7 +31,7 @@ app.use(
 
 app.use(ErrorMiddleware);
 // Import User Routes
-app.use("/api", router);
+app.use("/", router);
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
